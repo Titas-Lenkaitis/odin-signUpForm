@@ -10,6 +10,44 @@ body {
 .header {
   background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover;
+  flex-grow: 7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.credits {
+  margin-top: auto;
+  color: #FFFFFF;
+}
+
+.credits a {
+  color: #FFFFFF;
+}
+
+.signUpForm {
+  flex-grow: 3;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  background-color: #000000;
+  opacity: 0.65;
+  margin-top: 20vh;
+  justify-content: center;
+  font-size: 120px;
+  color: #FFFFFF;
+  align-items: center;
+  font-family: "norsebold";
+}
+
+.odinLined {
+  height: 150px;
+}
+
+.titleText {
+  margin: 32px 12px;
 }
 
 @font-face {
