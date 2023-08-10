@@ -84,7 +84,7 @@ body {
   margin-top: 18px;
   flex-wrap: wrap;
   gap: 36px;
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .input {
@@ -105,6 +105,28 @@ body {
 
 .descText2 {
   padding: 0px 48px;
+}
+
+.typeInput {
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  width: 230px;
+  height: 30px;
+  font-size: 17px;
+  padding: 0px 8px;
+  margin-top: 2px;
+}
+
+.typeInput:hover{
+  border-color: #6186ff;
+  transition: 0.1s;
+}
+
+.typeInput:focus, .typeInput:focus-within {
+  background-color: #f6f8ff;
+  border-color: #1443df;
+  transition: 0.1s;
+  outline: none;
 }
 
 @font-face {
