@@ -62,12 +62,14 @@ body {
 
 .form {
   height: 60vh;
-  background-color: #FFFFFF;
+  background-color: #f9fafb;
+  flex-grow: 1;
 }
 
 .whiteArea {
   box-shadow: 0px 5px 10px lightgrey;
   padding: 32px 48px;
+  background-color: #FFFFFF;
 }
 
 .formHeading, .formHeading + div {
@@ -122,11 +124,63 @@ body {
   transition: 0.1s;
 }
 
-.typeInput:focus, .typeInput:focus-within {
+.typeInput:focus {
   background-color: #f6f8ff;
   border-color: #1443df;
   transition: 0.1s;
   outline: none;
+  box-shadow: 5px 5px 10px -3px rgba(70,70,70,0.3);
+}
+
+.typeInput:valid {
+  background-color: #e8ffe9;
+  border-color: #6fd875;
+  transition: 0.1s;
+}
+
+.typeInput:invalid {
+  background-color: #ffebeb;
+  border-color: #ff6e6e;
+  transition: 0.1s;
+}
+
+.submit {
+  display: flex;
+  flex-direction: column;
+  margin-top: 28px;
+  padding-left: 48px;
+}
+
+.submitButton {
+  background-color: #596D48;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  border: 0px none #596D48;
+}
+
+.submitButton:hover {
+  background-color: #425531;
+  transition: 0.1s;
+}
+
+.submitButton:active {
+  background-color: #738564;
+  transition: 0.1s;
+}
+
+.alt {
+  margin-top: 36px;
+  font-size: 18px;
+}
+
+.alt a {
+  color: #596D48;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 @font-face {
